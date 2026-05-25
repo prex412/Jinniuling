@@ -1,1 +1,1 @@
-console.log("Welcome to Jinniuling Park Website");
+console.log('Jinniuling Park Tourism Website Loaded');

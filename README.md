@@ -1,13 +1,15 @@
 
 # Haikou Jinniuling Park Tourism Website
 
-Responsive tourism website created with HTML, CSS, and JavaScript.
-
-## Features
-- Responsive Design
-- Mobile Friendly
-- Tourism Style Layout
-- GitHub Pages Ready
+Responsive tourism website for GitHub Pages.
 
 ## Deployment
-Upload to GitHub and enable GitHub Pages.
+1. Upload all files to GitHub repository
+2. Enable GitHub Pages in repository settings
+3. Deploy from main branch
+
+## Replace Images
+Replace files inside:
+assets/images/
+
+Keep the same filenames.
