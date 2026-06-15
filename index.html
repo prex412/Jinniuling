@@ -1,69 +1,188 @@
-// MOBILE MENU
+<!DOCTYPE html>
+<html lang="en">
 
-const menuBtn=document.querySelector(".menu-btn");
+<head>
 
-const navLinks=document.querySelector(".nav-links");
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-if(menuBtn){
+<title>Haikou Jinniuling Park</title>
 
-menuBtn.addEventListener("click",()=>{
+<link rel="stylesheet" href="css/style.css">
 
-navLinks.classList.toggle("active");
+</head>
 
-});
+<body>
 
-}
+<header>
 
-// SCROLL REVEAL
+<nav class="navbar">
 
-function reveal(){
+<div class="logo">
+Jinniuling Park
+</div>
 
-const reveals=document.querySelectorAll(".reveal");
+<div class="menu-btn">
+☰
+</div>
 
-reveals.forEach(item=>{
+<ul class="nav-links">
 
-const windowHeight=window.innerHeight;
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="activities.html">Activities</a></li>
+<li><a href="attractions.html">Attractions</a></li>
+<li><a href="ecotourism.html">Eco Tourism</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="facilities.html">Facilities</a></li>
+<li><a href="visitor-guide.html">Guide</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="contact.html">Contact</a></li>
 
-const revealTop=item.getBoundingClientRect().top;
+</ul>
 
-if(revealTop<windowHeight-100){
+</nav>
 
-item.classList.add("active");
+</header>
 
-}
+<section class="hero">
 
-});
+<video autoplay muted loop playsinline>
 
-}
+<source src="assets/videos/hero.mp4" type="video/mp4">
 
-window.addEventListener("scroll",reveal);
+</video>
 
-reveal();
+<div class="hero-content">
 
-// GALLERY LIGHTBOX
+<h1>Discover Jinniuling Park</h1>
 
-function openImage(src){
+<p>The Green Heart of Haikou City</p>
 
-const lightbox=document.getElementById("lightbox");
+<a href="about.html" class="btn">
+Explore Now
+</a>
 
-const lightboxImg=document.getElementById("lightbox-img");
+</div>
 
-if(lightbox){
+</section>
 
-lightbox.style.display="flex";
+<section class="section reveal">
 
-lightboxImg.src=src;
+<div class="section-title">
 
-}
+<h2>Three Major Highlights</h2>
 
-}
+<p>Sports, Culture and Nature Together</p>
 
-document.addEventListener("click",(e)=>{
+</div>
 
-if(e.target.id==="lightbox"){
+<div class="card-grid">
 
-e.target.style.display="none";
+<div class="card">
 
-}
+<img src="assets/images/home-sports.jpg">
 
-});
+<div class="card-content">
+
+<h3>Sports Paradise</h3>
+
+<p>
+Football, basketball, skateboarding, table tennis and fitness activities.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="assets/images/home-memorial.jpg">
+
+<div class="card-content">
+
+<h3>Martyrs Memorial Area</h3>
+
+<p>
+A patriotic education destination honoring national heroes.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="assets/images/home-nature.jpg">
+
+<div class="card-content">
+
+<h3>Tropical Urban Oasis</h3>
+
+<p>
+Lakes, forests, pigeon square and tropical landscapes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section reveal">
+
+<div class="section-title">
+
+<h2>Park At A Glance</h2>
+
+</div>
+
+<div class="card-grid">
+
+<div class="card">
+<div class="card-content">
+<h2>96</h2>
+<p>Hectares</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h2>3</h2>
+<p>Main Zones</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h2>1989</h2>
+<p>Established</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h2>500K+</h2>
+<p>Annual Visitors</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Haikou Jinniuling Park Tourism Website
+</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
