@@ -2,52 +2,192 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gallery</title>
-<link rel="stylesheet" href="css/style.css">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+Gallery | Jinniuling Park
+
+</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
 </head>
 
 <body>
 
-<!-- Header -->
+<header>
 
-<section class="section">
+<nav class="navbar">
+
+<div class="logo">
+
+Jinniuling Park
+
+</div>
+
+<div class="menu-btn">
+
+☰
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="activities.html">Activities</a></li>
+
+<li><a href="attractions.html">Attractions</a></li>
+
+<li><a href="ecotourism.html">Eco Tourism</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="facilities.html">Facilities</a></li>
+
+<li><a href="visitor-guide.html">Guide</a></li>
+
+<li><a href="faq.html">FAQ</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="page-banner">
+
+<img src="assets/images/gallery-banner.jpg">
+
+<div class="page-banner-content">
+
+<h1>
+
+Photo Gallery
+
+</h1>
+
+<p>
+
+Explore Jinniuling Park Through Images
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section reveal">
 
 <div class="section-title">
 
-<h2>Photo Gallery</h2>
+<h2>
+
+Park Photography Collection
+
+</h2>
 
 <p>
-Explore the beauty of Jinniuling Park through images.
+
+Replace these placeholder images with your own fieldwork photos.
+
 </p>
 
 </div>
 
 <div class="gallery-grid">
 
-<img src="assets/images/gallery1.jpg">
-<img src="assets/images/gallery2.jpg">
-<img src="assets/images/gallery3.jpg">
-<img src="assets/images/gallery4.jpg">
-<img src="assets/images/gallery5.jpg">
-<img src="assets/images/gallery6.jpg">
-<img src="assets/images/gallery7.jpg">
-<img src="assets/images/gallery8.jpg">
-<img src="assets/images/gallery9.jpg">
-<img src="assets/images/gallery10.jpg">
-<img src="assets/images/gallery11.jpg">
-<img src="assets/images/gallery12.jpg">
+<img
+src="assets/images/gallery1.jpg"
+onclick="openImage(this.src)"
+alt="Gallery Image">
+
+<img
+src="assets/images/gallery2.jpg"
+onclick="openImage(this.src)"
+alt="Gallery Image">
+
+<img
+src="assets/images/gallery3.jpg"
+onclick="openImage(this.src)"
+alt="Gallery Image">
+
+<img
+src="assets/images/gallery4.jpg"
+onclick="openImage(this.src)"
+alt="Gallery Image">
+
+<img
+src="assets/images/gallery5.jpg"
+onclick="openImage(this.src)"
+alt="Gallery Image">
+
+<img
+src="assets/images/gallery6.jpg"
+onclick="openImage(this.src)"
+alt="Gallery Image">
+
+<img
+src="assets/images/gallery7.jpg"
+onclick="openImage(this.src)"
+alt="Gallery Image">
+
+<img
+src="assets/images/gallery8.jpg"
+onclick="openImage(this.src)"
+alt="Gallery Image">
+
+<img
+src="assets/images/gallery9.jpg"
+onclick="openImage(this.src)"
+alt="Gallery Image">
+
+<img
+src="assets/images/gallery10.jpg"
+onclick="openImage(this.src)"
+alt="Gallery Image">
+
+<img
+src="assets/images/gallery11.jpg"
+onclick="openImage(this.src)"
+alt="Gallery Image">
+
+<img
+src="assets/images/gallery12.jpg"
+onclick="openImage(this.src)"
+alt="Gallery Image">
 
 </div>
 
 </section>
 
+<div id="lightbox">
+
+<img id="lightbox-img">
+
+</div>
+
 <footer>
 
-<p>Capture the Beauty of Haikou</p>
+<p>
+
+Capture Nature • Capture Memories
+
+</p>
 
 </footer>
+
+<script src="js/script.js"></script>
 
 </body>
 
